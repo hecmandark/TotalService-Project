@@ -1,0 +1,94 @@
+body {
+    background-color: #243024;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%235de200' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.middle {
+    background: url(img/bg-hero.jpg) no-repeat fixed center;
+    background-size: cover;
+    background-position: center top;
+    
+
+
+}
+
+.middle_shadow {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+
+#logoCenter {
+    width: 250px;
+}
+
+#quienesSomos{
+    background-color: #001037;
+    height: 500px;
+
+    
+}
+#quienesSomos div {
+    max-width: 800px;
+    text-align: center;
+    
+}
+
+@media screen and (min-width:800px) {
+
+    #logoCenter {
+        width: 375px;
+    }
+    p {
+        font-size: 28px;
+    }
+
+
+}
+
+@media screen and (orientation: landscape) {
+    #logoCenter {
+        width: 40vh;
+
+    }
+
+    .middle {
+        height: 60vh;
+    }
+
+}
+
+@media screen and (max-height:768px) {
+
+    #logoCenter {
+        width: 40vh;
+
+    }
+
+    .middle_text {
+        margin-top: 10px;
+    }
+
+
+    #logo {
+        width: 50px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .middle {
+        height: 90vh;
+    }
+
+}
