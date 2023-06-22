@@ -46,8 +46,11 @@ section {
 
 }
 
+/* Section Servicios */
+
 .card {
-    width: 400px;
+    width: 300px;
+    margin: 3px 3px;
 }
 
 .card-img-top {
@@ -57,14 +60,13 @@ section {
 }
 
 .card-text {
-    font-size: 20px;
+    font-size: 1rem;
+    height: 110px;
 }
 
-.card-body p{
-   height: 110px;
-   
 
-}
+@media screen and (max-width:800px) {}
+
 
 @media screen and (min-width:800px) {
 
@@ -76,6 +78,9 @@ section {
         font-size: 28px;
     }
 
+    .card {
+        width: 400px;
+    }
 
 }
 
@@ -112,5 +117,8 @@ section {
     .middle {
         height: 90vh;
     }
+
+
+
 
 }
