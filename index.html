@@ -7,24 +7,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Total Service</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
 
   <!-- Bootstrap 5-->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
   <!-- CSS -->
   <link rel="stylesheet" href="./style.css">
+  
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md  bg-body-tertiary m-0 p-0">
 
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="img/logo TotalService.png" alt="TotalService" id="logo"></a>
+      <a class="navbar-brand" href="#">
+     
+        <img src="img/logo TotalService.png" alt="TotalService" id="logo">
+      </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
         <span class="navbar-toggler-icon"></span>
+
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto me-5 ">
@@ -32,13 +49,13 @@
             <a class="nav-link" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link" href="#">Quienes Somos</a>
+            <a class="nav-link" href="#quienesSomos">Quienes Somos</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link" href="#">Servicios</a>
+            <a class="nav-link" href="#servicios">Servicios</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link " href="#">Contacto</a>
+            <a class="nav-link " href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
@@ -66,9 +83,8 @@
 
     <div class="container-fluid text-light ">
       <h2 class="fs-1 mb-4">Quienes Somos</h2>
-      <p>Somos una empresa de Fumigación y Multiservicios, enfocada en el control de plagas y servicios
-        generales tanto de
-        negocios como de hogares. Ofreciendo a nuestros clientes la mas alta calidad en los materiales empleados con
+      <p>Somos una empresa de Fumigación y Multiservicios, enfocada principalmente en el control de plagas comercial y
+        residencial. Ofreciendo a nuestros clientes la mas alta calidad en los materiales empleados con
         un personal altamente calificado, empleando técnicas y equipos de ultima generación</p>
     </div>
 
@@ -78,67 +94,91 @@
   <section class="" id="servicios">
 
     <div class="container-fluid p-1 d-flex flex-wrap">
-      
 
-        <div class="card flex-fill">
-          <img class="card-img-top" src="./img/home.jpg" alt="Hogar">
-          <div class="card-body">
-            <h4 class="card-title">Para el Hogar</h4>
-            <p class="card-text">Ofrecemos los mejores productos para el cuidado de tus seres queridos y muebles en tu hogar</p>
-            <a href="#" class="btn btn-primary">CONTRATAR</a>
-          </div>
+
+      <div class="card flex-fill">
+        <img class="card-img-top" src="./img/home.jpg" alt="Hogar">
+        <div class="card-body">
+          <h4 class="card-title">Para el Hogar</h4>
+          <p class="card-text">Ofrecemos los mejores productos para el cuidado de tus seres queridos y muebles en tu
+            hogar</p>
+          <a href="#" class="btn btn-primary">CONTRATAR</a>
         </div>
+      </div>
 
-        <div class="card flex-fill">
-          <img class="card-img-top" src="./img/office.jpg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Oficina</h4>
-            <p class="card-text">Proporcionamos servicios que se adaptan a las necesidades de cada cliente en el ámbito profesional</p>
-            <a href="#" class="btn btn-primary">CONTRATAR</a>
-          </div>
+      <div class="card flex-fill">
+        <img class="card-img-top" src="./img/office.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Oficina</h4>
+          <p class="card-text">Proporcionamos servicios que se adaptan a las necesidades de cada cliente en el ámbito
+            profesional</p>
+          <a href="#" class="btn btn-primary">CONTRATAR</a>
         </div>
+      </div>
 
-        <div class="card flex-fill">
-          <img class="card-img-top" src="./img/industrial.jpg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Industrial</h4>
-            <p class="card-text">Con la mas alta calidad en materiales y un personal altamente capacitado para trabajos mas grandes y especializados</p>
-            <a href="#" class="btn btn-primary">CONTRATAR</a>
-          </div>
+      <div class="card flex-fill">
+        <img class="card-img-top" src="./img/industrial.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Industrial</h4>
+          <p class="card-text">Con la mas alta calidad en materiales y un personal altamente capacitado para trabajos
+            mas grandes y especializados</p>
+          <a href="#" class="btn btn-primary">CONTRATAR</a>
         </div>
+      </div>
 
-        <div class="card flex-fill">
-          <img class="card-img-top" src="./img/outside.jpg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Exteriores</h4>
-            <p class="card-text">Para nosotros las naturaleza importa por que nuestros productos pueden ser utilizados en el exterior sin gran impacto en
+      <div class="card flex-fill">
+        <img class="card-img-top" src="./img/outside.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Exteriores</h4>
+          <p class="card-text">Para nosotros las naturaleza importa por que nuestros productos pueden ser utilizados en
+            el exterior sin gran impacto en
             el ambiente</p>
-            <a href="#" class="btn btn-primary">CONTRATAR</a>
-          </div>
+          <a href="#" class="btn btn-primary">CONTRATAR</a>
         </div>
+      </div>
 
-        <div class="card flex-fill ">
-          <img class="card-img-top" src="./img/nautica.jpg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Nautica</h4>
-            <p class="card-text">Para una navegación limpia, segura, cómoda y libre de plagas.</p>
-            <a href="#" class="btn btn-primary">CONTRATAR</a>
-          </div>
+      <div class="card flex-fill ">
+        <img class="card-img-top" src="./img/nautica.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Nautica</h4>
+          <p class="card-text">Para una navegación limpia, segura, cómoda y libre de plagas.</p>
+          <a href="#" class="btn btn-primary">CONTRATAR</a>
         </div>
+      </div>
 
-        <div class="card flex-fill">
-          <img class="card-img-top" src="./img/aero.jpg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Aeronautica</h4>
-            <p class="card-text">Para el cuidado y mantenimiento de cualquier aerolínea, a cualquier hora con el fin de no interrumpir el servicio de
+      <div class="card flex-fill">
+        <img class="card-img-top" src="./img/aero.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Aeronautica</h4>
+          <p class="card-text">Para el cuidado y mantenimiento de cualquier aerolínea, a cualquier hora con el fin de no
+            interrumpir el servicio de
             vuelo.</p>
-            <a href="#" class="btn btn-primary">CONTRATAR</a>
-          </div>
+          <a href="#" class="btn btn-primary">CONTRATAR</a>
         </div>
+      </div>
 
     </div>
   </section>
 
+
+
+  <footer id="contacto" class="section-dark d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="./img/logo TotalService.png" alt="Logo del portafolio">
+    <p class="footer-texto text-center">Trabajamos todos los dias por su bienestar<br>Creemos algo grande juntos.</p>
+    <div class="icons-social d-flex flex-wrap align-items-center justify-content-center">
+
+      <a href="https://wa.link/i0f13s" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/totalservice2020/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto:janedoe@micorreo.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">Total Service (2023) &#169;</div>
+  </footer>
 
   <!-- Bootstrap 5 -->
 
