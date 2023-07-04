@@ -13,6 +13,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
 
 
   <!-- Bootstrap 5-->
@@ -25,51 +31,52 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="./style.css">
-  
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md  bg-body-tertiary m-0 p-0">
 
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-     
-        <img src="img/logo TotalService.png" alt="TotalService" id="logo">
-      </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-        <span class="navbar-toggler-icon"></span>
-
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto me-5 ">
-          <li class="nav-item mx-4">
-            <a class="nav-link" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a class="nav-link" href="#quienesSomos">Quienes Somos</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a class="nav-link" href="#servicios">Servicios</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a class="nav-link " href="#contacto">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Principal -->
+  <!-- Section wall -->
   <section>
-    <div class="middle container-fluid p-0">
-      <div class="middle_shadow container-fluid  d-flex justify-content-center flex-column p-0">
-        <img src="img/logo TotalService.png" alt="TotalService" class="img-fluid m-auto" id="logoCenter">
-        <div class="middle_text text-center">
-          <h1 class="text-bg-light bg-opacity-50">Tu Empresa de Fumigación Multiservicios</h1>
-          <p class="text-bg-success bg-opacity-50 fs-2">Calidad y Experiencia que hace la diferencia</p>
+    <div class="middle container-fluid p-0 ">
+
+      <div class="middle_shadow container-fluid  d-flex justify-content-between flex-column p-0">
+        <nav class="navbar navbar-expand-md m-0 p-0">
+
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+
+              <img src="img/logo TotalService.png" alt="TotalService" id="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+              <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#quienesSomos">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- <img src="img/logo TotalService.png" alt="TotalService" class="img-fluid m-auto" id="logoCenter"> -->
+        <div class="middle_text text-center" id="wallText">
+          <h1 class="text-bg-light bg-opacity-25 mb-4 p-2">Tu Empresa de Fumigación y Multiservicios</h1>
+          <p class="text-bg-success bg-opacity-75 fs-2 p-2">Calidad y Experiencia que hace la diferencia</p>
         </div>
       </div>
 
@@ -79,10 +86,10 @@
 
   <!--Section Quienes Somos -->
 
-  <section class="flex-column " id="quienesSomos">
+  <section class="flex-column" id="quienesSomos">
 
-    <div class="container-fluid text-light ">
-      <h2 class="fs-1 mb-4">Quienes Somos</h2>
+    <div class="container-fluid text-light">
+      <h2 class="fs-1 mb-5">Quienes Somos</h2>
       <p>Somos una empresa de Fumigación y Multiservicios, enfocada principalmente en el control de plagas comercial y
         residencial. Ofreciendo a nuestros clientes la mas alta calidad en los materiales empleados con
         un personal altamente calificado, empleando técnicas y equipos de ultima generación</p>
@@ -102,7 +109,9 @@
           <h4 class="card-title">Para el Hogar</h4>
           <p class="card-text">Ofrecemos los mejores productos para el cuidado de tus seres queridos y muebles en tu
             hogar</p>
-          <a href="#" class="btn btn-primary">CONTRATAR</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+            CONTRATAR
+          </button>
         </div>
       </div>
 
@@ -112,7 +121,9 @@
           <h4 class="card-title">Oficina</h4>
           <p class="card-text">Proporcionamos servicios que se adaptan a las necesidades de cada cliente en el ámbito
             profesional</p>
-          <a href="#" class="btn btn-primary">CONTRATAR</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+            CONTRATAR
+          </button>
         </div>
       </div>
 
@@ -122,7 +133,9 @@
           <h4 class="card-title">Industrial</h4>
           <p class="card-text">Con la mas alta calidad en materiales y un personal altamente capacitado para trabajos
             mas grandes y especializados</p>
-          <a href="#" class="btn btn-primary">CONTRATAR</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+            CONTRATAR
+          </button>
         </div>
       </div>
 
@@ -133,7 +146,9 @@
           <p class="card-text">Para nosotros las naturaleza importa por que nuestros productos pueden ser utilizados en
             el exterior sin gran impacto en
             el ambiente</p>
-          <a href="#" class="btn btn-primary">CONTRATAR</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+            CONTRATAR
+          </button>
         </div>
       </div>
 
@@ -142,7 +157,9 @@
         <div class="card-body">
           <h4 class="card-title">Nautica</h4>
           <p class="card-text">Para una navegación limpia, segura, cómoda y libre de plagas.</p>
-          <a href="#" class="btn btn-primary">CONTRATAR</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+            CONTRATAR
+          </button>
         </div>
       </div>
 
@@ -153,17 +170,53 @@
           <p class="card-text">Para el cuidado y mantenimiento de cualquier aerolínea, a cualquier hora con el fin de no
             interrumpir el servicio de
             vuelo.</p>
-          <a href="#" class="btn btn-primary">CONTRATAR</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+            CONTRATAR
+          </button>
         </div>
       </div>
 
     </div>
   </section>
 
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column justify-content-between align-content-center">
+
+          <img class="img-fluid" src="./img/logo TotalService.png" alt="Total Service">
+          
+          <div class="icons-modal d-flex flex-wrap align-items-center justify-content-center">
+
+            <a href="https://wa.link/i0f13s" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/totalservice2020/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="mailto:totalserviceplc@gmail.com " target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-envelope"></i>
+            </a>
+          </div>
+          <div class="derechos-de-autor mt-3 mx-auto">Total Service (2023) &#169;</div>
+
+        </div>
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+  <!-- Footer -->
   <footer id="contacto" class="section-dark d-flex flex-column align-items-center justify-content-center">
-    <img class="footer-logo" src="./img/logo TotalService.png" alt="Logo del portafolio">
+    <img class="footer-logo mb-4" src="./img/logo TotalService.png" alt="Total Service">
     <p class="footer-texto text-center">Trabajamos todos los dias por su bienestar<br>Creemos algo grande juntos.</p>
     <div class="icons-social d-flex flex-wrap align-items-center justify-content-center">
 
@@ -173,11 +226,11 @@
       <a href="https://www.instagram.com/totalservice2020/" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-instagram"></i>
       </a>
-      <a href="mailto:janedoe@micorreo.com" target="_blank" rel="noopener noreferrer">
+      <a href="mailto:totalserviceplc@gmail.com " target="_blank" rel="noopener noreferrer">
         <i class="bi bi-envelope"></i>
       </a>
     </div>
-    <div class="derechos-de-autor">Total Service (2023) &#169;</div>
+    <div class="derechos-de-autor mt-3">Total Service (2023) &#169;</div>
   </footer>
 
   <!-- Bootstrap 5 -->
