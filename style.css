@@ -38,16 +38,33 @@ section {
 }
 
 .middle_shadow {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.254);
     height: 100%;
 }
 
-#logoCenter {
-    width: 250px;
+
+.middle_text {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-#wallText {
-    font-family: 'Josefin Sans', sans-serif;
+.middle_text h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgba(251, 251, 251, 0.5);
+    padding: 2rem 0.2rem;
+}
+
+.middle_text p {
+    color: #000000;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: rgba(94, 210, 0, 0.5);
+    padding: 2rem 0.2rem;
+
 }
 
 /* Section Quienes Somos */
@@ -124,10 +141,6 @@ section {
 
 @media screen and (max-width:400px) {
 
-    .card-body {
-        /* padding: 7px; */
-    }
-
     .card-body p {
         font-size: 0.9rem;
     }
@@ -153,22 +166,20 @@ section {
         width: 400px;
     }
 
+    .middle_text h1 {
+        padding: 3rem;
+        font-size: 2rem;
+
+    }
+
+    .middle_text p {
+        padding: 3rem;
+        font-size: 1.5rem;
+
+
+    }
 
 }
-
-/* @media screen and (orientation: landscape) {
-    #logoCenter {
-        width: 40vh;
-
-    }
-
-    .middle {
-        height: 60vh;
-    }
-
-} */
-
-
 
 @media screen and (max-height:768px) {
 
@@ -187,10 +198,17 @@ section {
         font-size: 1rem;
     }
 
+    .middle_text h1 {
+        padding: 1rem;
+        font-size: 1.5rem;
+
+    }
+
+    .middle_text p {
+        padding: 1rem;
+        font-size: 1.2rem;
 
 
-
-
-
+    }
 
 }
